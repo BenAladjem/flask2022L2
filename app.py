@@ -57,5 +57,6 @@ api.add_resource(Books,"/books/")
 #api.add_resource(Books,"/")
 
 if __name__ == '__main__':
+    db.create_all()
     app.run(debug=True)
 
